@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Login and Registration</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="title_activity_add_oglas1">AddOglas1</string>
+    <string name="title_activity_login">AddOglas1</string>
+    <string name="title_activity_register">AddOglas1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="naziv_zivotinje">Naziv Životinje</string>
+    <string name="male_pet_text">Muško</string>
+    <string name="female_pet_text">Žensko</string>
+    <string name="button_next_text">Dalje</string>
+    <string name="title_activity_add_oglas2">AddOglas2</string>
+    <string name="cijepljen_text">Cijepljen</string>
+    <string name="je_text">Je</string>
+    <string name="nije_text">Nije</string>
+    <string name="cipiran_text">Čipiran</string>
+    <string name="title_activity_add_oglas3">AddOglas3</string>
+    <string name="naslov_oglasa_text">Opis oglasa:</string>
+    <string name="broj_mobitela_hint">Broj mobitela</string>
+    <string name="pasmina_text">Pasmina</string>
+    <string name="predaj_bttn_text">Predaj oglas</string>
+    <string name="naziv_oglasa_text">Naziv oglasa</string>
+    <string name="title_activity_udomi">UdomiActivity</string>
+    <string name="title_activity_pronadi">PronadiActivity</string>
+    <string name="title_activity_account">AccountActivity</string>
+
+
+</resources>

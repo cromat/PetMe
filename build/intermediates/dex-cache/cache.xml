@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\computer\Documents\PetMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\computer\Documents\PetMe\app\build\intermediates\pre-dexed\debug\classes-5fca3bfbe01da9d652a90d4d76deaf8297dd8eb4.jar" />
+    </item>
+    <item
+        jar="C:\Users\computer\Documents\PetMe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\computer\Documents\PetMe\app\build\intermediates\pre-dexed\debug\classes-0ca2b38814102ffad70ceafa33a8125503c33f1a.jar" />
+    </item>
+    <item
+        jar="C:\Users\computer\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\computer\Documents\PetMe\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-91479b0b5c4834d49e7082eef35dabf81b1d36ca.jar" />
+    </item>
+    <item
+        jar="C:\Users\computer\Documents\PetMe\app\libs\volley.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Users\computer\Documents\PetMe\app\build\intermediates\pre-dexed\debug\volley-76b297b6abbabb5527fc394efc9e4fffc33a3838.jar" />
+    </item>
+    <item
+        jar="C:\Users\computer\Documents\PetMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\computer\Documents\PetMe\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-875a322ed14b16e12922d2b9d679838ba9fd237c.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vrsta_array">
+        <item>Pas</item>
+        <item>Mačka</item>
+        <item>Ptica</item>
+        <item>Ostalo</item>
+    </string-array>
+
+    <string-array name="velicina_array">
+        <item>Mali/a</item>
+        <item>Srednji/a</item>
+        <item>Veliki/a</item>
+    </string-array>
+
+    <string-array name="starost_array">
+        <item>Beba</item>
+        <item>Odrasao/la</item>
+        <item>Star/a</item>
+    </string-array>
+
+    <string-array name="boja_array">
+        <item>Crna</item>
+        <item>Bijela</item>
+        <item>Smeđa</item>
+        <item>Žuta</item>
+        <item>Crvena</item>
+        <item>Siva</item>
+        <item>Plava</item>
+        <item>Narančasta</item>
+        <item>Neodređena</item>
+    </string-array>
+</resources>
