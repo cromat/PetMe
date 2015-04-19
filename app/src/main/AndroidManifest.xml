@@ -62,6 +62,10 @@
             android:name=".activity.AddOglasSlikeActivity"
             android:label="@string/title_activity_add_oglas_slike" >
         </activity>
+        <activity
+            android:name=".activity.EditAccountActivity"
+            android:label="@string/title_activity_edit_account" >
+        </activity>
     </application>
 
 </manifest>

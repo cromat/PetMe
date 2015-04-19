@@ -7,8 +7,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -36,6 +38,8 @@ public class AddOglas3 extends ActionBarActivity {
     private EditText nazivOglasa;
     private EditText opisOglasa;
     private EditText brojMobitela;
+    private EditText mjesto;
+    private Spinner zupanijaSpinner;
 
     private Button dalje;
 
@@ -52,6 +56,13 @@ public class AddOglas3 extends ActionBarActivity {
         nazivOglasa = (EditText) findViewById(R.id.editTextNazivOglasa);
         opisOglasa = (EditText)findViewById(R.id.editTextOpisOglasa);
         brojMobitela = (EditText) findViewById(R.id.editTextbrojMobitela);
+        mjesto = (EditText)findViewById(R.id.editTextMjesto);
+        zupanijaSpinner = (Spinner)findViewById(R.id.spinnerZupanija);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.zupanije_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        zupanijaSpinner.setAdapter(adapter);
 
         dbUser = new DatabaseUserHandler(getApplicationContext());
         dbOglas = new DatabaseOglasHandler(getApplicationContext());

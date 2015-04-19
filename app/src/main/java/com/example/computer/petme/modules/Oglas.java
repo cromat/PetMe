@@ -19,11 +19,14 @@ public class Oglas {
     private String boja;
     private String brMob;
 
+    private String zupanija;
+    private String mjesto;
+
     public Oglas() {
     }
 
     public Oglas(int id, String naziv, String opis, int idUser, String datum, String petname, String vrsta, String pasmina, Boolean spol,
-                 String velicina, String starost, String boja, String brMob) {
+                 String velicina, String starost, String boja, String brMob, String zupanija, String mjesto) {
         this.naziv = naziv;
         this.opis = opis;
         this.petname = petname;
@@ -37,6 +40,8 @@ public class Oglas {
         this.datum = datum;
         this.id = id;
         this.brMob = brMob;
+        this.zupanija = zupanija;
+        this.mjesto = mjesto;
     }
 
     public int getId() {
@@ -142,4 +147,12 @@ public class Oglas {
     public void setBrMob(String brMob) {
         this.brMob = brMob;
     }
+
+    public String getZupanija() {return zupanija;}
+
+    public void setZupanija(String zupanija) {this.zupanija = zupanija;}
+
+    public String getMjesto() {return mjesto;}
+
+    public void setMjesto(String mjesto) {this.mjesto = mjesto;}
 }

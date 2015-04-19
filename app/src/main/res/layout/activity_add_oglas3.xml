@@ -33,6 +33,18 @@
             android:layout_weight="1.77"
             />
 
+        <Spinner
+            android:id="@+id/spinnerZupanija"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mjesto_hint"
+            android:id="@+id/editTextMjesto" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,7 +56,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/button_next_text"
+            android:text="@string/predaj_bttn_text"
             android:id="@+id/bttnPredaj"/>
 
     </LinearLayout>

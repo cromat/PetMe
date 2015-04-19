@@ -10,6 +10,7 @@ public class User {
     private String username;
     private String email;
     private String phone;
+    private String lokacija;
 
     public User() {
     }
@@ -60,5 +61,11 @@ public class User {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getLokacija() {return lokacija;}
+
+    public void setLokacija(String lokacija) {
+        this.lokacija = lokacija;
     }
 }
