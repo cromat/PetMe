@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Android Login and Registration</string>
+    <string name="app_name">PetMe</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="hint_name">Fullname</string>
@@ -36,6 +36,15 @@
     <string name="title_activity_udomi">UdomiActivity</string>
     <string name="title_activity_pronadi">PronadiActivity</string>
     <string name="title_activity_account">AccountActivity</string>
+    <string name="bttnMojiOglasi">Moji Oglasi</string>
+    <string name="bttnPostavke">Postavke</string>
+    <string name="empty"/>
+    <string name="username_text">Username: </string>
+    <string name="fullname">Ime i Prezime: </string>
+    <string name="lokacija">Lokacija: </string>
+    <string name="datum_reg">Datum Registracije: </string>
+    <string name="phone_txt">Mobitel: </string>
+    <string name="email_txt">Email:</string>
 
 
 </resources>

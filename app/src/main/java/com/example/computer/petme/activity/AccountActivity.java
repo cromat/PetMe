@@ -2,17 +2,54 @@ package com.example.computer.petme.activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.computer.petme.R;
+import com.example.computer.petme.helper.DatabaseUserHandler;
+import com.example.computer.petme.helper.SQLiteHandler;
+import com.example.computer.petme.modules.User;
+
+import java.util.HashMap;
 
 public class AccountActivity extends ActionBarActivity {
+
+    private DatabaseUserHandler db;
+
+    private TextView txtUsername;
+    private TextView txtFullName;
+    private TextView txtEmail;
+    private TextView txtPhone;
+    private TextView txtLokacija;
+    private TextView txtDatumReg;
+
+    private Button bttnMojiOglasi;
+    private Button bttnPostavke;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
+
+        txtUsername = (TextView)findViewById(R.id.txtUsernameAcc);
+        txtFullName = (TextView)findViewById(R.id.txtFullName);
+        txtEmail = (TextView)findViewById(R.id.txtEmail);
+        txtLokacija = (TextView)findViewById(R.id.txtLokacija);
+        txtDatumReg = (TextView)findViewById(R.id.txtDatumReg);
+        txtPhone = (TextView)findViewById(R.id.txtPhone);
+
+        db = new DatabaseUserHandler(getApplicationContext());
+
+        User user = db.getUserDetails();
+
+        txtUsername.setText(user.getUsername());
+        //txtFullName.setText(user.getName());
+        txtEmail.setText(user.getEmail());
+        //txtPhone.setText(user.getPhone());
+
     }
 
 
