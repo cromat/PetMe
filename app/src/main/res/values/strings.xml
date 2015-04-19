@@ -45,6 +45,10 @@
     <string name="datum_reg">Datum Registracije: </string>
     <string name="phone_txt">Mobitel: </string>
     <string name="email_txt">Email:</string>
+    <string name="title_activity_add_oglas_slike">AddOglasSlikeActivity</string>
+    <string name="glavna_slika_text">glavnaslika</string>
+    <string name="slika_text">slika</string>
+    <string name="petme_text">PetMe</string>
 
 
 </resources>

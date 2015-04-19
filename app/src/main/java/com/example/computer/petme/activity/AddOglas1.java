@@ -61,12 +61,15 @@ public class AddOglas1 extends ActionBarActivity {
                 System.out.println("Poslije : "+oglas.getId()+ " ," + oglas.getNaziv() + ", " +
                         oglas.getOpis()+ ", " + oglas.getVrsta() + ", "  + oglas.getPasmina());
 
-                dbOglas.deleteOglasi();
+                dbOglas.updateOglas(oglas);
+
+
+                //dbOglas.deleteOglasi();
 
                 System.out.println("Velicina poslije brisanja svih oglasa : " + dbOglas.getRowCount());
-                dbOglas.addOglas(oglas);
+                //dbOglas.addOglas(oglas);
                 System.out.println("Velicina poslije dodavanja oglasa : " + dbOglas.getRowCount());
-                oglas = dbOglas.getOglasDetails();
+                //oglas = dbOglas.getOglasDetails();
                 System.out.println("Poslije update oglasa : "+oglas.getId()+ " " + oglas.getNaziv() + " " +
                         oglas.getOpis()+ " " + oglas.getVrsta() + " "  + oglas.getPasmina());
 

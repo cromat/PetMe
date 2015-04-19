@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -29,55 +28,36 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AddOglas3 extends ActionBarActivity {
+public class AddOglasSlikeActivity extends ActionBarActivity {
 
-    private static final String TAG = AddOglas3.class.getSimpleName();
+    private static final String TAG = AddOglasSlikeActivity.class.getSimpleName();
 
-    private EditText nazivOglasa;
-    private EditText opisOglasa;
-    private EditText brojMobitela;
-
-    private Button dalje;
-
-    private DatabaseUserHandler dbUser;
+    private Button predajOglas;
     private DatabaseOglasHandler dbOglas;
-
+    private DatabaseUserHandler dbUser;
     private Oglas oglas;
+    private User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_oglas3);
+        setContentView(R.layout.activity_add_oglas_slike);
 
-        nazivOglasa = (EditText) findViewById(R.id.editTextNazivOglasa);
-        opisOglasa = (EditText)findViewById(R.id.editTextOpisOglasa);
-        brojMobitela = (EditText) findViewById(R.id.editTextbrojMobitela);
-
-        dbUser = new DatabaseUserHandler(getApplicationContext());
-        dbOglas = new DatabaseOglasHandler(getApplicationContext());
-
+        this.dbOglas = new DatabaseOglasHandler(getApplicationContext());
         oglas = dbOglas.getOglasDetails();
 
-        dalje = (Button)findViewById(R.id.bttnPredaj);
+        this.dbUser = new DatabaseUserHandler(getApplicationContext());
+        this.predajOglas = (Button) findViewById(R.id.bttnPredajOglas);
 
-        dalje.setOnClickListener(new View.OnClickListener() {
+
+
+
+        this.predajOglas.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
-                oglas.setNaziv(String.valueOf(nazivOglasa.getText()));
-                oglas.setOpis(String.valueOf(opisOglasa.getText()));
-                oglas.setBrMob(String.valueOf(brojMobitela.getText()));
-
-                User user = dbUser.getUserDetails();
-
-                System.out.println("na kraju oglasa, prije predaje : "+oglas.getId()+ " " + oglas.getNaziv() + " " +
-                        oglas.getOpis()+ " " + oglas.getVrsta() + " "  + oglas.getPasmina()+" "+ oglas.getBoja()+ " "+
-                        oglas.getStarost()+" " + oglas.getVelicina()+" "+ oglas.getOpis()+" "+oglas.getPetname()+" "
-                        +oglas.getSpol() + " " + oglas.getBrMob());
-
-
-                startActivity(new Intent(getApplicationContext(), AddOglasSlikeActivity.class));
-
+            public void onClick(View view) {
+                user = dbUser.getUserDetails();
+                predajOglas(user.getId(), oglas);
+                finish();
             }
         });
     }
@@ -86,7 +66,7 @@ public class AddOglas3 extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_add_oglas3, menu);
+        getMenuInflater().inflate(R.menu.menu_add_oglas_slike, menu);
         return true;
     }
 

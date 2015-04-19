@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.computer.petme.activity.AddOglasSlikeActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/petme_text"
+            android:id="@+id/textTitleUploadSlike"
+            android:gravity="center"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/ImageViewGlavnaSlika"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/glavna_slika_text"
+            android:src="@drawable/pas" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageViewSlika2"
+                android:contentDescription="@string/slika_text"
+                android:src="@drawable/pas" />
+
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageViewSlika3"
+                android:contentDescription="@string/slika_text"
+                android:src="@drawable/pas" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageViewSlika4"
+                android:contentDescription="@string/slika_text"
+                android:src="@drawable/pas" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageViewSlika5"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/pas"
+                android:contentDescription="@string/slika_text" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/predaj_bttn_text"
+            android:id="@+id/bttnPredajOglas"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>

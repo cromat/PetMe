@@ -33,9 +33,9 @@
         </activity>
         <activity
             android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login"
             android:launchMode="singleTop"
-            android:windowSoftInputMode="adjustPan"
-            android:label="@string/title_activity_login" >
+            android:windowSoftInputMode="adjustPan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -57,6 +57,10 @@
         <activity
             android:name=".activity.UdomiActivity"
             android:label="@string/title_activity_udomi" >
+        </activity>
+        <activity
+            android:name=".activity.AddOglasSlikeActivity"
+            android:label="@string/title_activity_add_oglas_slike" >
         </activity>
     </application>
 

@@ -44,7 +44,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/predaj_bttn_text"
+            android:text="@string/button_next_text"
             android:id="@+id/bttnPredaj"/>
 
     </LinearLayout>

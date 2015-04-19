@@ -131,6 +131,32 @@ public class DatabaseOglasHandler extends SQLiteOpenHelper {
 
         Log.d(TAG, "New user inserted into sqlite table user: " + id);
     }
+
+    public void updateOglas(Oglas oglas) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_ID, oglas.getId());
+        values.put(KEY_NAME, oglas.getNaziv()); // Name
+        values.put(KEY_OPIS, oglas.getOpis()); // Username
+        values.put(KEY_IDUSER, oglas.getIdUser()); // Email
+        values.put(KEY_DATUM, oglas.getDatum()); // Phone
+        values.put(KEY_PETNAME, oglas.getPetname()); // Name
+        values.put(KEY_VRSTA, oglas.getVrsta()); // Username
+        values.put(KEY_PASMINA, oglas.getPasmina()); // Email
+        values.put(KEY_SPOL, oglas.getSpol()); // Phone
+        values.put(KEY_VELICINA, oglas.getVelicina()); // Name
+        values.put(KEY_STAROST, oglas.getStarost()); // Username
+        values.put(KEY_BOJA, oglas.getBoja()); // Email
+        values.put(KEY_MOB, oglas.getBrMob()); // broj mobitela
+
+        // Inserting Row
+        //long id = db.update(TABLE_OGLAS, values, KEY_ID, new String[]{String.valueOf(oglas.getId())});
+        long id = db.update(TABLE_OGLAS, values, null, null);
+        db.close(); // Closing database connection
+
+        Log.d(TAG, "User updated into sqlite table user: " + id);
+    }
     /**
      * Storing empty oglas details in database
      * */

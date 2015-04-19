@@ -68,8 +68,10 @@ public class AddOglas2 extends ActionBarActivity {
                 oglas.setStarost(starostSpinner.getSelectedItem().toString());
                 oglas.setBoja(bojaSpinner.getSelectedItem().toString());
 
-                dbOglas.deleteOglasi();
-                dbOglas.addOglas(oglas);
+                dbOglas.updateOglas(oglas);
+
+                //dbOglas.deleteOglasi();
+                //dbOglas.addOglas(oglas);
 
                 startActivity(new Intent(getApplicationContext(), AddOglas3.class));
 
