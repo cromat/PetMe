@@ -46,6 +46,11 @@ public class AddOglasSlikeActivity extends ActionBarActivity {
         this.dbOglas = new DatabaseOglasHandler(getApplicationContext());
         oglas = dbOglas.getOglasDetails();
 
+        System.out.println("na kraju oglasa, prije predaje : "+oglas.getId()+ " " + oglas.getNaziv() + " " +
+                oglas.getOpis()+ " " + oglas.getVrsta() + " "  + oglas.getPasmina()+" "+ oglas.getBoja()+ " "+
+                oglas.getStarost()+" " + oglas.getVelicina()+" "+ oglas.getOpis()+" "+oglas.getPetname()+" "
+                +oglas.getSpol() + " " + oglas.getBrMob() + " " + oglas.getZupanija() + " " + oglas.getMjesto());
+
         this.dbUser = new DatabaseUserHandler(getApplicationContext());
         this.predajOglas = (Button) findViewById(R.id.bttnPredajOglas);
 
@@ -143,6 +148,8 @@ public class AddOglasSlikeActivity extends ActionBarActivity {
                 params.put("starost", oglas.getStarost());
                 params.put("boja", oglas.getBoja());
                 params.put("mobitel", oglas.getBrMob());
+                params.put("zupanija", oglas.getZupanija());
+                params.put("mjesto", oglas.getMjesto());
 
                 return params;
             }

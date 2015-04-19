@@ -289,6 +289,8 @@ public class DatabaseOglasHandler extends SQLiteOpenHelper {
         values.put(KEY_STAROST, oglas.getStarost()); // Username
         values.put(KEY_BOJA, oglas.getBoja()); // Email
         values.put(KEY_MOB, oglas.getBrMob()); // broj mobitela
+        values.put(KEY_ZUPANIJA, oglas.getZupanija()); //zupanija
+        values.put(KEY_MJESTO, oglas.getMjesto()); //mjesto
 
         // Inserting Row
         //long id = db.update(TABLE_OGLAS, values, KEY_ID, new String[]{String.valueOf(oglas.getId())});

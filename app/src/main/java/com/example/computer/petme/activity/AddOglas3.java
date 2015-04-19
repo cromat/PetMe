@@ -78,13 +78,11 @@ public class AddOglas3 extends ActionBarActivity {
                 oglas.setNaziv(String.valueOf(nazivOglasa.getText()));
                 oglas.setOpis(String.valueOf(opisOglasa.getText()));
                 oglas.setBrMob(String.valueOf(brojMobitela.getText()));
+                oglas.setZupanija(String.valueOf(zupanijaSpinner.getSelectedItem()));
+                oglas.setMjesto(String.valueOf(mjesto.getText()));
 
-                User user = dbUser.getUserDetails();
 
-                System.out.println("na kraju oglasa, prije predaje : "+oglas.getId()+ " " + oglas.getNaziv() + " " +
-                        oglas.getOpis()+ " " + oglas.getVrsta() + " "  + oglas.getPasmina()+" "+ oglas.getBoja()+ " "+
-                        oglas.getStarost()+" " + oglas.getVelicina()+" "+ oglas.getOpis()+" "+oglas.getPetname()+" "
-                        +oglas.getSpol() + " " + oglas.getBrMob());
+                dbOglas.updateOglas(oglas);
 
 
                 startActivity(new Intent(getApplicationContext(), AddOglasSlikeActivity.class));
@@ -174,6 +172,8 @@ public class AddOglas3 extends ActionBarActivity {
                 params.put("starost", oglas.getStarost());
                 params.put("boja", oglas.getBoja());
                 params.put("mobitel", oglas.getBrMob());
+                params.put("zupanija", oglas.getZupanija());
+                params.put("mjesto", oglas.getMjesto());
 
                 return params;
             }

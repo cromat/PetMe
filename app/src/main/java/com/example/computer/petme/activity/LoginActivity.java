@@ -56,6 +56,11 @@ public class LoginActivity extends Activity {
         btnLinkToRegister = (Button) findViewById(R.id.btnLinkToRegisterScreen);
         db = new DatabaseUserHandler(getApplicationContext());
 
+        db.deleteUsers();
+        db.onUpgrade(db.getWritableDatabase(),1,2);
+
+
+
         // Progress dialog
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
