@@ -15,12 +15,13 @@ public class User {
     public User() {
     }
 
-    public User(int id, String name, String username, String email, String phone) {
+    public User(int id, String name, String username, String email, String phone, String lokacija) {
         this.id = id;
         this.name = name;
         this.username = username;
         this.email = email;
         this.phone = phone;
+        this.lokacija = lokacija;
     }
 
     public int getId() {

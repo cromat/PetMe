@@ -15,4 +15,7 @@ public class AppConfig {
 
     // Server upload oglas url
     public static String URL_UPLOAD_OGLAS = "http://www.petme.pctechlearning.com/android_login_api/uploadOglas.php";
+
+    // Server update user url
+    public static String URL_EDIT_ACCOUNT = "http://www.petme.pctechlearning.com/android_login_api/editAccount.php";
 }

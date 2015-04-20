@@ -54,10 +54,9 @@ public class LoginActivity extends Activity {
         inputPassword = (EditText) findViewById(R.id.password);
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLinkToRegister = (Button) findViewById(R.id.btnLinkToRegisterScreen);
-        db = new DatabaseUserHandler(getApplicationContext());
 
-        db.deleteUsers();
-        db.onUpgrade(db.getWritableDatabase(),1,2);
+
+        db = new DatabaseUserHandler(getApplicationContext());
 
 
 
@@ -207,12 +206,13 @@ public class LoginActivity extends Activity {
                             jObj.getString("fullname"),
                             jObj.getString("name"),
                             jObj.getString("email"),
-                            jObj.getString("phone"));
+                            jObj.getString("phone"),
+                            jObj.getString("lokacija"));
                     Log.d("id", String.valueOf(user.getId()));
                     Log.d("email", String.valueOf(user.getEmail()));
                     Log.d("username", String.valueOf(user.getUsername()));
 
-                    db.addUser(user.getId(), user.getName(), user.getUsername(), user.getEmail(), user.getPhone());
+                    db.addUser(user.getId(), user.getName(), user.getUsername(), user.getEmail(), user.getPhone(),user.getLokacija());
 
                     int count = db.getRowCount();
 

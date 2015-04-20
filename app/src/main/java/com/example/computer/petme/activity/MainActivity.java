@@ -45,6 +45,8 @@ public class MainActivity extends Activity {
         db = new SQLiteHandler(getApplicationContext());
         dbUser = new DatabaseUserHandler(getApplicationContext());
 
+
+
         // session manager
         session = new SessionManager(getApplicationContext());
 

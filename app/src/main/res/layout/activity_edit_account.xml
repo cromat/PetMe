@@ -22,6 +22,59 @@
             android:layout_gravity="center_horizontal"
             android:src="@drawable/majmun"/>
 
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp"
+                android:text="@string/username_text"/>
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:editable="false"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25dp"
+                android:text="@string/email_txt"/>
+
+            <EditText
+                android:editable="false"
+                android:id="@+id/edtEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
 
         <LinearLayout
             android:weightSum="1"
@@ -48,33 +101,6 @@
 
         </LinearLayout>
 
-
-        <LinearLayout
-            android:weightSum="1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="0.5"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:layout_margin="5dp"
-                android:layout_gravity="center_horizontal"
-                android:textSize="25dp"
-                android:text="@string/email_txt"/>
-
-            <EditText
-                android:id="@+id/edtEmail"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"/>
-
-        </LinearLayout>
-
-
         <LinearLayout
             android:weightSum="1"
             android:layout_width="fill_parent"
@@ -94,6 +120,8 @@
 
             <EditText
                 android:id="@+id/edtPhone"
+                android:inputType="phone"
+                android:ems="10"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"/>
@@ -132,7 +160,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/bttn_pohrani"
-            android:id="@+id/bttnPostavke"
+            android:id="@+id/bttnPohraniPromjene"
             android:layout_gravity="center_horizontal"
             android:padding="20dp"
             />

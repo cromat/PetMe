@@ -297,7 +297,7 @@ public class DatabaseOglasHandler extends SQLiteOpenHelper {
         long id = db.update(TABLE_OGLAS, values, null, null);
         db.close(); // Closing database connection
 
-        Log.d(TAG, "User updated into sqlite table user: " + id);
+        Log.d(TAG, "Oglas updated into sqlite table oglasibaze: " + id);
     }
 
 }

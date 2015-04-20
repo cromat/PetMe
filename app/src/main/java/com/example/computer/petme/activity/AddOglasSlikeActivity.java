@@ -99,7 +99,7 @@ public class AddOglasSlikeActivity extends ActionBarActivity {
 
             @Override
             public void onResponse(String response) {
-                Log.d(TAG, "UploadOglas Response: " + response.toString());
+                Log.d(TAG, "EditUser Response: " + response.toString());
 
                 try {
 

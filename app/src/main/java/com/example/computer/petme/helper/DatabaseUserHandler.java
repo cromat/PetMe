@@ -32,6 +32,7 @@ public class DatabaseUserHandler extends SQLiteOpenHelper {
     private static final String KEY_USERNAME = "username";
     private static final String KEY_EMAIL = "email";
     private static final String KEY_PHONE = "phone";
+    private static final String KEY_LOKACIJA = "lokacija";
 
     public DatabaseUserHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -45,7 +46,8 @@ public class DatabaseUserHandler extends SQLiteOpenHelper {
                 + KEY_NAME + " TEXT,"
                 + KEY_USERNAME + " TEXT,"
                 + KEY_EMAIL + " TEXT UNIQUE,"
-                + KEY_PHONE + " TEXT" + ")";
+                + KEY_PHONE + " TEXT,"
+                + KEY_LOKACIJA + " TEXT" + ")";
         db.execSQL(CREATE_USER_TABLE);
 
         Log.d(TAG, "Database tables created");
@@ -55,8 +57,8 @@ public class DatabaseUserHandler extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // Drop older table if existed
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
-
+        //db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
+        db.execSQL("ALTER TABLE user ADD lokacija TEXT");
         // Create tables again
         onCreate(db);
     }
@@ -64,7 +66,7 @@ public class DatabaseUserHandler extends SQLiteOpenHelper {
     /**
      * Storing user details in database
      * */
-    public void addUser(int idUser, String name, String username, String email, String phone) {
+    public void addUser(int idUser, String name, String username, String email, String phone, String lokacija) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -73,6 +75,7 @@ public class DatabaseUserHandler extends SQLiteOpenHelper {
         values.put(KEY_USERNAME, username); // Username
         values.put(KEY_EMAIL, email); // Email
         values.put(KEY_PHONE, phone); // Phone
+        values.put(KEY_LOKACIJA, lokacija); // Lokacija
 
         // Inserting Row
         long id = db.insert(TABLE_USER, null, values);
@@ -99,7 +102,8 @@ public class DatabaseUserHandler extends SQLiteOpenHelper {
                     cursor.getString(1),
                     cursor.getString(2),
                     cursor.getString(3),
-                    cursor.getString(4));
+                    cursor.getString(4),
+                    cursor.getString(5));
         }
         /*if (cursor.getCount() > 0) {
             user.put("name", cursor.getString(1));
@@ -141,4 +145,20 @@ public class DatabaseUserHandler extends SQLiteOpenHelper {
 
         Log.d(TAG, "Deleted all user info from sqlite USER");
     }
+
+    public void updateUser(User user){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_NAME, user.getName()); // Name
+        values.put(KEY_LOKACIJA,user.getLokacija() ); // Lokacija
+        values.put(KEY_PHONE, user.getPhone()); // Phone
+
+
+        long id = db.update(TABLE_USER, values, null, null);
+        db.close(); // Closing database connection
+
+        Log.d(TAG, "User updated into sqlite table users: " + id);
+    }
+
 }
