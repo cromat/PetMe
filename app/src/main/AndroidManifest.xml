@@ -66,6 +66,10 @@
             android:name=".activity.EditAccountActivity"
             android:label="@string/title_activity_edit_account" >
         </activity>
+        <activity
+            android:name=".activity.UdomiListActivity"
+            android:label="@string/title_activity_udomi_list" >
+        </activity>
     </application>
 
 </manifest>

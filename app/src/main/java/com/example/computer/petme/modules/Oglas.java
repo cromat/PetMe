@@ -18,7 +18,6 @@ public class Oglas {
     private String starost;
     private String boja;
     private String brMob;
-
     private String zupanija;
     private String mjesto;
 

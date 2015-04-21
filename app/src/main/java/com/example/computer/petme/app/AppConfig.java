@@ -18,4 +18,7 @@ public class AppConfig {
 
     // Server update user url
     public static String URL_EDIT_ACCOUNT = "http://www.petme.pctechlearning.com/android_login_api/editAccount.php";
+
+    // Server getAllOglasi url
+    public static String URL_GET_ALL_OGLASI = "http://www.petme.pctechlearning.com/android_login_api/getAllOglasi.php";
 }

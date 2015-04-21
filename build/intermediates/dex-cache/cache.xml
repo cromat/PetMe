@@ -2,20 +2,6 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\build\intermediates\pre-dexed\debug\classes-5d11792c64bd2c0fed5eabef469e5ec4e135823b.jar" />
-    </item>
-    <item
-        jar="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\libs\volley.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
-        <dex dex="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\build\intermediates\pre-dexed\debug\volley-4d4c6a3a2d5e2593a4c1cc1c9c70b85ce8a024ea.jar" />
-    </item>
-    <item
         jar="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -28,6 +14,27 @@
         revision="21.1.2"
         sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
         <dex dex="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-91479b0b5c4834d49e7082eef35dabf81b1d36ca.jar" />
+    </item>
+    <item
+        jar="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\build\intermediates\pre-dexed\debug\classes-5d11792c64bd2c0fed5eabef469e5ec4e135823b.jar" />
+    </item>
+    <item
+        jar="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="efeda77c808750cb670ee9c48d8a1835d89dbcb2">
+        <dex dex="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\build\intermediates\pre-dexed\debug\classes-82f2d9334ca942125f3396e6d552aae36ef47067.jar" />
+    </item>
+    <item
+        jar="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\libs\volley.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\build\intermediates\pre-dexed\debug\volley-4d4c6a3a2d5e2593a4c1cc1c9c70b85ce8a024ea.jar" />
     </item>
     <item
         jar="C:\Users\computer\AndroidStudioProjects\PetMe\PetMeNew\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"

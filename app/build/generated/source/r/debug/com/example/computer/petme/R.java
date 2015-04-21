@@ -1352,7 +1352,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0a002e;
         public static final int action_mode_bar_stub=0x7f0a002d;
         public static final int action_mode_close_button=0x7f0a0020;
-        public static final int action_settings=0x7f0a0072;
+        public static final int action_settings=0x7f0a0077;
         public static final int activity_chooser_view_content=0x7f0a0021;
         public static final int always=0x7f0a0016;
         public static final int beginning=0x7f0a0013;
@@ -1406,6 +1406,9 @@ containing a value of this type.
         public static final int imgPronadi=0x7f0a006c;
         public static final int imgUdomi=0x7f0a006b;
         public static final int listMode=0x7f0a0009;
+        public static final int listViewIme=0x7f0a0075;
+        public static final int listViewLokacija=0x7f0a0076;
+        public static final int listViewNaslov=0x7f0a0074;
         public static final int list_item=0x7f0a0025;
         public static final int middle=0x7f0a0015;
         public static final int name=0x7f0a006f;
@@ -1419,6 +1422,7 @@ containing a value of this type.
         public static final int radioBttnFemalePet=0x7f0a004d;
         public static final int radioBttnMalePet=0x7f0a004c;
         public static final int radioGroupGenderPett=0x7f0a004b;
+        public static final int recycler_view=0x7f0a0072;
         public static final int search_badge=0x7f0a0035;
         public static final int search_bar=0x7f0a0034;
         public static final int search_button=0x7f0a0036;
@@ -1433,6 +1437,7 @@ containing a value of this type.
         public static final int showCustom=0x7f0a000f;
         public static final int showHome=0x7f0a0010;
         public static final int showTitle=0x7f0a0011;
+        public static final int simpleItemImage=0x7f0a0073;
         public static final int spinnerBoja=0x7f0a0051;
         public static final int spinnerStarost=0x7f0a0050;
         public static final int spinnerVelicina=0x7f0a004f;
@@ -1492,8 +1497,9 @@ containing a value of this type.
         public static final int activity_main=0x7f04001d;
         public static final int activity_pronadi=0x7f04001e;
         public static final int activity_register=0x7f04001f;
-        public static final int activity_udomi=0x7f040020;
-        public static final int support_simple_spinner_dropdown_item=0x7f040021;
+        public static final int activity_udomi_list=0x7f040020;
+        public static final int simple_oglas_item=0x7f040021;
+        public static final int support_simple_spinner_dropdown_item=0x7f040022;
     }
     public static final class menu {
         public static final int menu_account=0x7f0e0000;
@@ -1507,6 +1513,7 @@ containing a value of this type.
         public static final int menu_pronadi=0x7f0e0008;
         public static final int menu_register=0x7f0e0009;
         public static final int menu_udomi=0x7f0e000a;
+        public static final int menu_udomi_list=0x7f0e000b;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -1576,8 +1583,9 @@ containing a value of this type.
         public static final int title_activity_pronadi=0x7f0c003d;
         public static final int title_activity_register=0x7f0c003e;
         public static final int title_activity_udomi=0x7f0c003f;
-        public static final int username_text=0x7f0c0040;
-        public static final int welcome=0x7f0c0041;
+        public static final int title_activity_udomi_list=0x7f0c0040;
+        public static final int username_text=0x7f0c0041;
+        public static final int welcome=0x7f0c0042;
     }
     public static final class style {
         public static final int Animation_AppCompat_DropDownUp=0x7f0d0000;

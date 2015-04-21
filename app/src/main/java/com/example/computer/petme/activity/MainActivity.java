@@ -92,7 +92,7 @@ public class MainActivity extends Activity {
         imgUdomi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),UdomiActivity.class));
+                startActivity(new Intent(getApplicationContext(),UdomiListActivity.class));
             }
         });
     }
