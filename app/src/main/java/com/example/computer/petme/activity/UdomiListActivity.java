@@ -151,10 +151,10 @@ public class UdomiListActivity extends ActionBarActivity {
                         Log.d("zupanija", String.valueOf(oglas.getZupanija()));
 
                         oglasiArray.add(oglas);
+                        adapter.notifyItemInserted(oglasiArray.size());
                     }
                     zadnjiDatum = oglasiArray.get(oglasiArray.size()-1).getDatum();
                     Log.d("Datum ",zadnjiDatum);
-                    adapter.notifyItemInserted(oglasiArray.size());
                     loading = true;
 
 
