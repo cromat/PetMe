@@ -1498,10 +1498,9 @@ containing a value of this type.
         public static final int activity_main=0x7f04001d;
         public static final int activity_pronadi=0x7f04001e;
         public static final int activity_register=0x7f04001f;
-        public static final int activity_udomi=0x7f040020;
-        public static final int activity_udomi_list=0x7f040021;
-        public static final int simple_oglas_item=0x7f040022;
-        public static final int support_simple_spinner_dropdown_item=0x7f040023;
+        public static final int activity_udomi_list=0x7f040020;
+        public static final int simple_oglas_item=0x7f040021;
+        public static final int support_simple_spinner_dropdown_item=0x7f040022;
     }
     public static final class menu {
         public static final int menu_account=0x7f0e0000;
