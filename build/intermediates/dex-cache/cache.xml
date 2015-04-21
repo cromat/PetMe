@@ -2,39 +2,60 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\computer\Documents\PetMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\computer\Documents\PetMe\app\build\intermediates\pre-dexed\debug\classes-5fca3bfbe01da9d652a90d4d76deaf8297dd8eb4.jar" />
-    </item>
-    <item
-        jar="C:\Users\computer\Documents\PetMe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="C:\Users\computer\Documents\PetMe\app\build\intermediates\pre-dexed\debug\classes-0ca2b38814102ffad70ceafa33a8125503c33f1a.jar" />
-    </item>
-    <item
-        jar="C:\Users\computer\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\Users\computer\Documents\PetMe\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-91479b0b5c4834d49e7082eef35dabf81b1d36ca.jar" />
-    </item>
-    <item
-        jar="C:\Users\computer\Documents\PetMe\app\libs\volley.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
-        <dex dex="C:\Users\computer\Documents\PetMe\app\build\intermediates\pre-dexed\debug\volley-76b297b6abbabb5527fc394efc9e4fffc33a3838.jar" />
-    </item>
-    <item
-        jar="C:\Users\computer\Documents\PetMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jar="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="C:\Users\computer\Documents\PetMe\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-875a322ed14b16e12922d2b9d679838ba9fd237c.jar" />
+        <dex dex="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-b0764b90fe348158979599e751c94593e0f1d4b7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\pre-dexed\debug\classes-b479cf2dbf2e393da541ef5403c2e1a82d4538b0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="efeda77c808750cb670ee9c48d8a1835d89dbcb2">
+        <dex dex="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\pre-dexed\debug\classes-a597e0aaf75fccf124d63e622c05bb8defca5ae5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\libs\httpmime-4.0.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="326bf4147f100e8a4fdd7f1867a87e969fb10812">
+        <dex dex="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\pre-dexed\debug\httpmime-4.0.1-283c90652a563ab3af71c67ae25ca0890a2ab906.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ivan Cvitas\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-19771ed4bc5dec867618f40f5301e5cc315570e0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\libs\volley.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\pre-dexed\debug\volley-0c73f9ac515c4faead101230c22f97e4c36e7fb8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\libs\apache-mime4j-0.6.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="945007627e8d12275d755081a9e609c018e1210d">
+        <dex dex="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\pre-dexed\debug\apache-mime4j-0.6-7465127e151e4fe40ebd356186bb55130251ab7b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Ivan Cvitas\Documents\GitHub\PetMe\app\build\intermediates\pre-dexed\debug\classes-b80f8b3efdceb68317e62ce45a011deb62103df8.jar" />
     </item>
 
 </items>

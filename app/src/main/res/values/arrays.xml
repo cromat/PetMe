@@ -30,4 +30,29 @@
         <item>Narančasta</item>
         <item>Neodređena</item>
     </string-array>
+
+    <string-array name="zupanije_array">
+        <item>Dubrovačko - neretvanska</item>
+        <item>Splitsko - dalmatinska</item>
+        <item>Šibensko - kninska</item>
+        <item>Zadarska</item>
+        <item>Ličko - senjska</item>
+        <item>Primorsko - goranska</item>
+        <item>Istarska</item>
+        <item>Karlovačka</item>
+        <item>Zagrebačka</item>
+        <item>Sisačko - moslavačka</item>
+        <item>Krapinsko - zagorska</item>
+        <item>Međimurska</item>
+        <item>Varaždinska</item>
+        <item>Koprivničko - križevačka</item>
+        <item>Virovitičko - podravska</item>
+        <item>Bjelovarsko - bilogorska</item>
+        <item>Požeško - slavonska</item>
+        <item>Osječko - baranjska</item>
+        <item>Brodsko - posavska</item>
+        <item>Vukovarsko - srijemska</item>
+        <item>Grad Zagreb</item>
+    </string-array>
+
 </resources>

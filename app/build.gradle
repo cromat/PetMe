@@ -22,5 +22,8 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:recyclerview-v7:21.0.0'
     compile files('libs/volley.jar')
+    compile files('libs/httpmime-4.0.1.jar')
+    compile files('libs/apache-mime4j-0.6.jar')
 }

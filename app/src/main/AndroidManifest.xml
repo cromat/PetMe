@@ -3,6 +3,8 @@
     package="com.example.computer.petme" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name=".app.AppController"
@@ -61,6 +63,14 @@
         <activity
             android:name=".activity.AddOglasSlikeActivity"
             android:label="@string/title_activity_add_oglas_slike" >
+        </activity>
+        <activity
+            android:name=".activity.EditAccountActivity"
+            android:label="@string/title_activity_edit_account" >
+        </activity>
+        <activity
+            android:name=".activity.UdomiListActivity"
+            android:label="@string/title_activity_udomi_list" >
         </activity>
     </application>
 

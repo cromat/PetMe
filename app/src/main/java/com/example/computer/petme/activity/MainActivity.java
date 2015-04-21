@@ -45,6 +45,8 @@ public class MainActivity extends Activity {
         db = new SQLiteHandler(getApplicationContext());
         dbUser = new DatabaseUserHandler(getApplicationContext());
 
+
+
         // session manager
         session = new SessionManager(getApplicationContext());
 
@@ -54,9 +56,6 @@ public class MainActivity extends Activity {
 
         // Fetching user details from sqlite
         HashMap<String, String> user = db.getUserDetails();
-
-        String name = user.get("name");
-        String email = user.get("email");
 
         // Logout button click event
         btnLogout.setOnClickListener(new View.OnClickListener() {
@@ -90,7 +89,7 @@ public class MainActivity extends Activity {
         imgUdomi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),UdomiActivity.class));
+                startActivity(new Intent(getApplicationContext(),UdomiListActivity.class));
             }
         });
     }

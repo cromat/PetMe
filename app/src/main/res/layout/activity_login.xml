@@ -6,7 +6,7 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:background="@color/bg_login"
         android:gravity="center"
         android:orientation="vertical"
@@ -26,7 +26,7 @@
                 android:src="@drawable/cuko_logo"
                 android:layout_gravity="center"
                 android:paddingBottom="30dp"
-                />
+                android:contentDescription="@string/logo_description_text" />
 
             <EditText
                 android:id="@+id/email"
@@ -76,7 +76,7 @@
                 android:text="@string/btn_link_to_register"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
         </LinearLayout>
 
     </LinearLayout>

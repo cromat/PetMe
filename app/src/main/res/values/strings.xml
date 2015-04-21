@@ -49,6 +49,11 @@
     <string name="glavna_slika_text">glavnaslika</string>
     <string name="slika_text">slika</string>
     <string name="petme_text">PetMe</string>
+    <string name="title_activity_edit_account">EditAccountActivity</string>
+    <string name="bttn_pohrani">Pohrani Promjene</string>
+    <string name="mjesto_hint">Mjesto</string>
+    <string name="title_activity_udomi_list">UdomiListActivity</string>
+    <string name="logo_description_text">logo</string>
 
 
 </resources>

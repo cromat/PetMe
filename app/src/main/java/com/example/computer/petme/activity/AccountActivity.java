@@ -1,10 +1,12 @@
 package com.example.computer.petme.activity;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -41,17 +43,43 @@ public class AccountActivity extends ActionBarActivity {
         txtDatumReg = (TextView)findViewById(R.id.txtDatumReg);
         txtPhone = (TextView)findViewById(R.id.txtPhone);
 
+        bttnPostavke = (Button)findViewById(R.id.bttnPostavke);
+        bttnMojiOglasi = (Button)findViewById(R.id.bttnMojiOglasi);
+
         db = new DatabaseUserHandler(getApplicationContext());
 
         User user = db.getUserDetails();
 
         txtUsername.setText(user.getUsername());
-        //txtFullName.setText(user.getName());
+        txtFullName.setText(user.getName());
         txtEmail.setText(user.getEmail());
-        //txtPhone.setText(user.getPhone());
+        txtPhone.setText(user.getPhone());
+        txtLokacija.setText(user.getLokacija());
+
+        bttnPostavke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),EditAccountActivity.class));
+            }
+        });
+
+
 
     }
 
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        User user = db.getUserDetails();
+
+        txtUsername.setText(user.getUsername());
+        txtFullName.setText(user.getName());
+        txtEmail.setText(user.getEmail());
+        txtPhone.setText(user.getPhone());
+        txtLokacija.setText(user.getLokacija());
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

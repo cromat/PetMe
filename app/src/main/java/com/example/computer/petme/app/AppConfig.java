@@ -15,4 +15,13 @@ public class AppConfig {
 
     // Server upload oglas url
     public static String URL_UPLOAD_OGLAS = "http://www.petme.pctechlearning.com/android_login_api/uploadOglas.php";
+
+    // Server update user url
+    public static String URL_EDIT_ACCOUNT = "http://www.petme.pctechlearning.com/android_login_api/editAccount.php";
+
+    // Server upload slike url
+    public static String URL_UPLOAD_SLIKE = "http://www.petme.pctechlearning.com/android_login_api/uploadSlike.php";
+
+    // Server getAllOglasi url
+    public static String URL_GET_ALL_OGLASI = "http://www.petme.pctechlearning.com/android_login_api/getAllOglasi.php";
 }
